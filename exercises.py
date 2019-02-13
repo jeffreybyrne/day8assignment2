@@ -149,3 +149,23 @@ for each_country in countries:
 
 print('The list of non-islands is {}'.format(non_islands))
 print('The list of islands is {}'.format(islands))
+
+
+#Exercise 8
+# You want to add up your expenses for the year. Create a list of numbers (integers or floats) that represents your expenses, eg:
+# [250, 7.95, 30.95, 16.50]
+# Add up the numbers and output the result.
+# Put this code into a method. The method should take a list as an argument and return the sum of the expenses in the list. Call the method twice with different lists.
+
+expenses = [124.30,1411.84,433.85,1823.93,22.13]
+
+def sum_expenses(expense_list):
+    expense_total = 0
+    for expense in expense_list:
+        expense_total += expense
+    return expense_total
+
+print('The total of expenses for your list is ${:.2f}.'.format(sum_expenses(expenses)))
+
+new_expense_list = [284.23,29.11,990.29,183.20,11.17,20.34,86.55,2033.16]
+print('The total of expenses for your list is ${:.2f}.'.format(sum_expenses(new_expense_list)))
