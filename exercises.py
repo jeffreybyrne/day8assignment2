@@ -66,3 +66,23 @@ print(coins.count(True))
 fav_artists.pop()
 # Pick a city in your city population dictionary and change its population.
 cities['Chicago'] = 2023407
+
+#Exercise 5
+# Find the sum total of the population in the dictionary of cities.
+total_pop = 0
+for city, value in cities.items():
+    total_pop += value
+# Using your dictionary containing the names of your family and friends with their ages, print out one of two messages for each depending on their age.
+for sibling, age in my_siblings.items():
+    if age > 30:
+        print('Dang, {} is old!'.format(sibling))
+    else:
+        print("Good, {} isn't old yet".format(sibling))
+# Print out the last two colours in your list of favourite colours.
+print(fav_colours[-2:])
+# Increase by 1 the age of everyone in your list of ages. Print it out.
+for sibling, age in my_siblings.items():
+    my_siblings[sibling] = age + 1
+# Add two new colours to your list of favourite colours.
+fav_colours.append('fuschia')
+fav_colours.append('cerulean')
