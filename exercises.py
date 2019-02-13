@@ -52,3 +52,17 @@ print(ages)
 # Add "Beauty and the Beast" movie to your dictionary of movies information, but with a twist: the movie was released both in 1991 and in 2017. Print it out.
 fav_movies["Beauty and the Beast"] = '1991,2017'
 print(fav_movies)
+
+#Exercise 4
+# Print out all of the ages of your friends/family that are less than 30 (or any number where some ages will not be printed!).
+for age in ages:
+    if age < 30:
+        print(age)
+# Find and output the age of the oldest person in your friends/family list.
+print(max(ages))
+# Count how many times you flipped 'heads' using the coin flips list.
+print(coins.count(True))
+# You realize one of the performing artists in your list is no longer a favourite. Remove one of them from the list.
+fav_artists.pop()
+# Pick a city in your city population dictionary and change its population.
+cities['Chicago'] = 2023407
