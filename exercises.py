@@ -23,3 +23,17 @@ ages.append(0)
 print(ages)
 # Using the dictionary of movie information, access and print the year of one of the movies.
 print(fav_movies['BASEketball'])
+
+#Exercise 2
+# Print out the last element of the list of your favourite colours.
+# Note: do this in a way that would still work for a list of any size!
+print(fav_colours[-1])
+# Add a new city to the dictionary of cities and population.
+cities["Georgetown"] = 42123
+# Reverse the list of coin flips and save it.
+coins.reverse()
+# Print out the population of one of the cities.
+print(cities['Halifax'])
+# Print out a sentence about each item in the list of performing artists.
+for artist in fav_artists:
+    print("I think {} is pretty neat".format(artist))
