@@ -105,11 +105,47 @@ phone_nums = [[1,2,3],[4,5,6],['*',0,'#']]
 countries = [
     {'name': 'Ireland',
     'continent': 'Europe',
-    'island': 'kinda'},
+    'island': True},
     {'name': 'Canada',
     'continent': 'North America',
-    'island': 'nope'},
+    'island': False},
     {'name': 'Guyana',
     'continent': 'South America',
-    'island': 'nope'}
+    'island': False}
 ]
+
+#Exercise 7
+# Output the message "I will not skateboard in the halls" 20 times.
+for number in range(0,20):
+    print('I will not skateboard in the halls')
+# Create a list consisting of the above message. It should appear in the list 20 times.
+message_list = []
+for number in range(0,20):
+    message_list.append('I will not skateboard in the halls')
+
+# Create a list consisting of the numbers between 1 and 50.
+one_to_fifty = list(range(1,51))
+
+# Use a for loop to find the sum of the numbers in the above list.
+list_sum = 0
+for number in one_to_fifty:
+    list_sum += one_to_fifty[number-1]
+# Create a new list which has three of each number up to 50.
+# Ie. [1, 1, 1, 2, 2, 2, 3, 3, 3, ... , 50, 50, 50] and so on, up to 50.
+new_list = []
+for number in range(1,51):
+    new_list.append(number)
+    new_list.append(number)
+    new_list.append(number)
+
+# Make a new list out all of the countries from the dictionary in Exercise 6 that are not islands. Print out both lists.
+non_islands = []
+islands = []
+for each_country in countries:
+    if each_country['island']:
+        islands.append(each_country['name'])
+    elif not each_country['island']:
+        non_islands.append(each_country['name'])
+
+print('The list of non-islands is {}'.format(non_islands))
+print('The list of islands is {}'.format(islands))
